@@ -1,12 +1,11 @@
-# Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-
+# Study-of-basic-digital-logic-gates-and-verification-of-truth-tables-for-different-logic-gates-realization-
  AIM:
 To study about the different digital IC’s and to verify the truth table in Quartus for the basic logic gates using Verilog programming.
 
-Equipments Required:
+Components Required:
 Hardware – PCs, Cyclone II , USB flasher
 Software – Quartus prime
 Theory
-Introduction
 Logic gates are the basic building blocks of any digital system. Logic gates are electronic circuits having one or more than one input and only one output. The relationship between the input and the output is based on a certain logic. Based on this, logic gates are named as
 
 AND gate
@@ -59,14 +58,32 @@ If the output is 1, then the bulb glows.
 Check all the gates following the same procedure.
 Program:
 /*
+```
 Program to verify the truth table in quartus for the basic logic gates using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: Dharmaraj s
+RegisterNumber: 212222240025
+```
 */
-Logic symbol & Truthtable
-RTL realization
-Output:
-RTL
+```
+module gates(a,b,yand,yor,ynot,yxor,ynand,ynor,yxnor);
+input a,b;
+output yand,yor,ynot,yxor,ynand,ynor,yxnor;
+and(yand,a,b);
+or(yor,a,b);
+not(ynot,a);
+xor(yxor,a,b);
+nand(ynand,a,b);
+nor(ynor,a,b);
+xnor(yxnor,a,b);
+endmodule
+```
+RTL diagram:
+![DE EXP 1](https://github.com/dharmaraj-007/Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-/assets/119560386/51d20fa6-3ea2-4900-937c-836b74367f40)
+Truthtable:
+![TT exp1](https://github.com/dharmaraj-007/Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-/assets/119560386/ac181506-1592-4ce6-a47f-df4fb6113622)
+
+Output waveform:
+![digital electronics gates](https://github.com/dharmaraj-007/Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-/assets/119560386/27714a70-6f12-4f58-8cff-736285df46bf)
 
 Result:
-Thus the different digital IC’s are studied and the truth table for different logic gates are verified.
+Thus the different digital logic gates are studied and the truth table for different logic gates are verified.
